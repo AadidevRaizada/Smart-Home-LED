@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.info-panel {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.led-status, .time-display {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.led-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.led-indicator.on {
+  background-color: #2ecc71;
+  box-shadow: 0 0 15px #2ecc71;
+}
+
+.led-indicator.off {
+  background-color: #e74c3c;
+  box-shadow: 0 0 15px #e74c3c;
+}
+
+#status, #currentTime {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.time-display p:first-child {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
